@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+<body>
+    <h3>歡迎光臨</h3>
+    <h2>註冊會員</h2>
+    <form action="/signup" method="POST">
+        暱稱<input type="text" name="nickname" placeholder="請輸入暱稱" pattern="[A-Z|a-z|0-9]{3,20}"><br/>
+        信箱<input type="text" name="email" placeholder="請輸入email" pattern="[A-Z|a-z|0-9|@|.]{1,20}"><br/>
+        密碼<input type="password" name="password"  placeholder="請輸入密碼" pattern="[A-Z|a-z|0-9]{6,20}"><br/><br/>
+        <button type="submit">註冊</button><br/>
+    </form>
+    <h2>登入會員</h2>
+    <form action="/signin" method="POST">
+        信箱<input type="text" name="email" placeholder="請輸入email" pattern="[A-Z|a-z|0-9|@|.]{1,20}"><br/>
+        密碼<input type="password" name="password" placeholder="請輸入密碼" pattern="[A-Z|a-z|0-9]{6,20}"><br/><br/>
+        <button type="submit">登入</button><br/>
+    </form>
+</body>
+</html>
